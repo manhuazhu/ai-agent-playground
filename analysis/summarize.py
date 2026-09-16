@@ -11,7 +11,7 @@ def load_groups(path):
     with open(path, newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            groups[row["cohort"]].append(float(row["response_time_ms"]))
+            groups[row["group"]].append(float(row["response_time_ms"]))
     return groups
 
 
