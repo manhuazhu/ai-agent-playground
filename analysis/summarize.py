@@ -18,7 +18,7 @@ def load_groups(path):
 def main():
     groups = load_groups(DATA_PATH)
     for name, values in groups.items():
-        print(f"{name}: n={len(values)}, mean={statistics.mean(values):.1f} ms")
+        print(f"{name}: n={len(values)}, mean={statistics.mean(values):.1f} ms, median={statistics.median(values):.1f} ms")
 
 
 if __name__ == "__main__":
